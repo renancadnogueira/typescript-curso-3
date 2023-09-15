@@ -5,7 +5,7 @@ export function logarTempoDeExecucao(emSegundos: boolean = false) {
         descriptor: PropertyDescriptor
     ) {
         const metodoOriginal = descriptor.value;
-        descriptor.value = function(...args: any[]) {
+        descriptor.value = function(...args: any[]) { //Os parametros serão transformados em um Array.
             let divisor = 1;
             let unidade = 'milisegundos';
             if (emSegundos) {
