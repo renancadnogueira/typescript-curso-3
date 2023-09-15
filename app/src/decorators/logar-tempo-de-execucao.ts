@@ -1,7 +1,7 @@
 export function logarTempoDeExecucao(emSegundos: boolean = false) {
     return function(
-        target: any,
-        propertyKey: string,
+        target: any, //(construtor ou protótipo da classe)
+        propertyKey: string, 
         descriptor: PropertyDescriptor
     ) {
         const metodoOriginal = descriptor.value;
