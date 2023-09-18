@@ -15,8 +15,6 @@ export abstract class View<T> { //Tipo genérico T. //Uma classe abstrata não p
         }
     }
 
-    @logarTempoDeExecucao(true)
-    @inspect
     public update(model: T): void {
         let template = this.template(model);
         this.elemento.innerHTML = template;
