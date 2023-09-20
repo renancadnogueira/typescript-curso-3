@@ -1,5 +1,6 @@
 import { Modelo } from '../interfaces/modelo.js';
 import { Negociacao } from './negociacao.js';
+
 export class Negociacoes implements Modelo<Negociacoes> {
 
     private negociacoes: Negociacao[] = [];
